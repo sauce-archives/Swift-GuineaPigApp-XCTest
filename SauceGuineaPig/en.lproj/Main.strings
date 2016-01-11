@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Testing test test"; ObjectID = "A5M-7J-77L"; */
+"A5M-7J-77L.text" = "Testing test test";
+
+/* Class = "UILabel"; text = "First View"; ObjectID = "KQZ-1w-vlD"; */
+"KQZ-1w-vlD.text" = "First View";
+
+/* Class = "UITabBarItem"; title = "First"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "First";
+
+/* Class = "UITabBarItem"; title = "Second"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Second";

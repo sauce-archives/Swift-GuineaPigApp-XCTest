@@ -49,6 +49,7 @@
 		772E13B21C40372900166962 /* SauceGuineaPigUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SauceGuineaPigUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		772E13B61C40372900166962 /* SauceGuineaPigUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SauceGuineaPigUITests.swift; sourceTree = "<group>"; };
 		772E13B81C40372900166962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772E13C51C403ADF00166962 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +305,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				772E139B1C40372900166962 /* Base */,
+				772E13C51C403ADF00166962 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -407,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SauceGuineaPig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.SauceGuineaPig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SauceGuineaPig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.SauceGuineaPig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,6 +495,7 @@
 				772E13BD1C40372900166962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		772E13BE1C40372900166962 /* Build configuration list for PBXNativeTarget "SauceGuineaPigTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				772E13C01C40372900166962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		772E13C11C40372900166962 /* Build configuration list for PBXNativeTarget "SauceGuineaPigUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				772E13C31C40372900166962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
