@@ -26,21 +26,21 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
         self.getTime()
-        let utgr = UITapGestureRecognizer.init(target: self, action: Selector("handleLinkTap:"))
+        let utgr = UITapGestureRecognizer.init(target: self, action: #selector(FirstViewController.handleLinkTap(_:)))
         iAmALink.addGestureRecognizer(utgr)
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FirstViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
         clientTime.text = getTime()
         let device = UIDevice()
         userAgent.text = device.systemName + " " + device.systemVersion + " " + device.model
-        userAgent.text = userAgent.text! + " " + device.identifierForVendor!.UUIDString
+        userAgent.text = userAgent.text! + " " + device.identifierForVendor!.uuidString
     }
     
-    func handleLinkTap(gestureRecogizer: UIGestureRecognizer){
-        let url = NSURL(string: "https://saucelabs.com/test-guinea-pig2.html")
-        let app = UIApplication.sharedApplication()
+    func handleLinkTap(_ gestureRecogizer: UIGestureRecognizer){
+        let url = URL(string: "https://saucelabs.com/test-guinea-pig2.html")
+        let app = UIApplication.shared
         if(app.canOpenURL(url!)){
             app.openURL(url!)
         } else {
@@ -54,15 +54,16 @@ class FirstViewController: UIViewController {
     }
     
     func getTime() ->String{
-        return "\(NSDate().timeIntervalSince1970 * 1000)"
+        return "\(Date().timeIntervalSince1970 * 1000)"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func handleSend(sender: AnyObject) {
+    @IBAction func handleSend(_ sender: AnyObject) {
         yourComments.text = comments.text
+        yourComments.accessibilityValue = comments.text
         comments.text = nil
         checkedCheckBox.setOn(true, animated: true)
         uncheckedCheckBox.setOn(false, animated: true)
